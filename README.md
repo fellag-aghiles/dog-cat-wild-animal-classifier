@@ -1,6 +1,5 @@
 
 # Description
-the architectuer of the model is, it use activation function and optimisation of, and it consiste of
 
 This project is a image classification pipeline built with PyTorch, 
 It allows you to train a Convolutional Neural Network (CNN) from scratch, evaluate its performance, and use a simple GUI to classify new images interactively.
