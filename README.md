@@ -21,27 +21,43 @@ Supports GPU acceleration (CUDA) if available
 # Model Architecture
 
 Convolutional Layers:
+
 Conv1: 3 input channels → 32 filters (3x3 kernel, padding=1)
+
 Conv2: 32 → 64 filters (3x3 kernel, padding=1)
+
 Conv3: 64 → 128 filters (3x3 kernel, padding=1)
+
 Each layer is followed by ReLU activation and 2x2 MaxPooling.
 
+
 Fully Connected Layers:
+
 Flatten layer to convert features into a vector
+
 Linear(128 * 16 * 16 → 128)
+
 Linear(128 → 10)
 
+
 Activation Functions:
+
 ReLU used for hidden layers
+
 Softmax applied implicitly through CrossEntropyLoss during training
 
 
-# Optimization and Hyperparameters
+
+# Optimizer and Hyperparameters
 
 Optimizer: Adam
+
 Learning Rate: 0.0007
+
 Loss Function: CrossEntropyLoss
+
 Batch Size: 256
+
 Epochs: 7
 
 
@@ -50,11 +66,17 @@ Epochs: 7
 Training process includes:
 
 Forward pass through the model
+
 Loss computation
+
 Backpropagation
+
 Parameter update with Adam
+
 Validation after each epoch
+
 Results printed at each step
+
 After training, loss and accuracy graphs are displayed for analysis.
 
 
