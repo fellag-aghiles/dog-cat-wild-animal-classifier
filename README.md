@@ -9,18 +9,28 @@ it was trainned on an overal of 16k images of cats dogs and wild animals
 # What This Project Does
 
 Automatically loads dataset from folders (each folder = one class)
+
 Encodes labels with scikit-learn
+
 Splits data into training (70%), validation(15%), and test(15%) sets
+
 Defines a custom CNN model with PyTorch
+
 Trains and evaluates the model
+
 Plots accuracy and loss over time
+
 Saves and reloads trained models
+
 Includes a Tkinter-based GUI for interactive image prediction
+
 Supports GPU acceleration (CUDA) if available
+
 
 # Model Architecture
 
 Convolutional Layers:
+
 
 Conv1: 3 input channels → 32 filters (3x3 kernel, padding=1)
 
@@ -65,6 +75,7 @@ Epochs: 7
 
 Training process includes:
 
+
 Forward pass through the model
 
 Loss computation
@@ -84,6 +95,7 @@ After training, loss and accuracy graphs are displayed for analysis.
 # Dataset Setup
 
 Your dataset should be structured as follows:
+
 train/
 
   cat/
@@ -104,12 +116,19 @@ train/
 
 Place your dataset folder named "train" in the same directory as the script.
 
+
 Open a terminal and run:
+
 python3 Image.py
 
+
 You’ll be asked:
+
+
 Do you want to Train a new model or no? y/n
+
 Type “y” to train a new model
+
 Type “n” to load an existing model (saved_model_complete.pth)
 
 
@@ -133,33 +152,52 @@ after you finish your test and close your the tkinter window, a graph that compa
 
 You can easily customize key parts of the code:
 
+
 Change input image size:
+
 transforms.Resize((128, 128))
 
+
 Modify CNN architecture:
+
 Edit the ImageModel class
 
+
 Adjust hyperparameters:
+
 LR = 0.0007
+
 BATCH_SIZE = 256
+
 EPOCHS = 7
 
+
 Change dataset path:
+
 dir_path = "train"
 
 # Notes
 
 If you skip training, make sure “saved_model_complete.pth” exists.
+
 Very large batch sizes may cause GPU memory errors.
+
 The Tkinter GUI might not run on server or google-collab
 
 # Requirenments
 
 PyTorch
+
 Torchvision
+
 scikit-learn
+
 pandas
+
 matplotlib
+
 Pillow 
+
 tkinter 
+
 torchsummary
