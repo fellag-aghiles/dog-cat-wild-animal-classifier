@@ -1,5 +1,5 @@
 
-this model is trainned on 5150 cat, 4740 dog, and 4740 wild animals ( lion, tiger, fox,...)
+this model is trainned on 5650 cat, 5240 dog, and 5240 wild animals ( lion, tiger, fox,...)
 
 
 the architectuer of the model is, it use activation function and optimisation of, and it consiste of
